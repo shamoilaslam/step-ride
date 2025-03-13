@@ -1,0 +1,143 @@
+/* General Section Styling */
+.features-section {
+  padding: 4rem 1.5rem;
+  background-color: #f9f9f9; /* Light background color */
+  color: #333;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem; /* Add space between image and features */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Features Container */
+.features-container {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Feature Row */
+.feature-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  padding: 1.5rem; /* Padding inside the block */
+  background-color: white;
+  border-radius: 10px;
+}
+
+.align-left {
+  flex-direction: row;
+}
+
+.align-right {
+  flex-direction: row-reverse;
+}
+
+/* Icon Styling */
+.feature-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  background: radial-gradient(circle, #FF6F00, #1976D2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Styling */
+.feature-content {
+  text-align: left;
+  max-width: 90%;
+}
+
+.align-right .feature-content {
+  text-align: right;
+}
+
+.feature-title {
+  font-size: 1.8rem;
+  color: #1976D2;
+  margin-bottom: 0.8rem;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Hover Effects */
+.feature-icon:hover {
+  background: radial-gradient(circle, #00D4FF, #FF6F00);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transform: rotate(360deg);
+  transition: 0.6s ease-in-out;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .features-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features-container {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* Increased gap */
+  }
+  .image-container {
+    display: none; /* Hide the image on smaller screens */
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+  }
+
+  .feature-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .feature-title {
+    font-size: 1.2rem;
+  }
+
+  .feature-description {
+    font-size: 0.8rem;
+  }
+}

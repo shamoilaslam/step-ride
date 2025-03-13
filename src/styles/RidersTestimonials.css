@@ -1,0 +1,151 @@
+/* RidersTestimonials.css */
+
+.rider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding: 2rem; */
+    /* background-color: #f8f9fa; */
+}
+
+/* Riders Section */
+.rider-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    width: 90%;
+    scroll-behavior: smooth;
+}
+
+.rider-card {
+    flex: 0 0 auto;
+    text-align: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.rider-card:hover {
+    transform: scale(1.05);
+}
+
+.rider-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.rider-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Statistics Section */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #290265;
+    padding: 2rem;
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+}
+
+.stat-box {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-box h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-box p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.riders-header {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+/* Testimonials Section */
+.testimonials-section {
+    height: 100vh;
+    width: 100%;
+    background: #9900ff;
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;                           
+    /* margin-top: 2rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+
+}
+
+.testimonial-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-header p {
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.testimonial-comment {
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-style: italic;
+    min-height: 50px; /* Ensure there's enough space for the comment */
+  }
+
+.testimonial-card {
+    flex: 0 0 auto;
+    background: white;
+    color: #003366;
+    padding: 1.5rem;
+    border-radius: 10px;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-role {
+    font-weight: bold;
+    color: #ff4081;
+}
+
+.testimonial-comment {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: italic;
+}

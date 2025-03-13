@@ -1,0 +1,197 @@
+/* Section Styling */
+.become-driver {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 3rem;
+  background-color: #ffffff; /* White background */
+  overflow: hidden;
+  border-radius: 30px;
+  gap: 3rem;
+  z-index: 1;
+}
+
+.driver-content {
+  flex: 1;
+  max-width: 480px;
+  color: #333333; /* Dark color for text on white background */
+  position: relative;
+  z-index: 2;
+}
+
+.driver-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FF6F00; /* Bright Orange */
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.driver-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 60px;
+  height: 5px;
+  background: linear-gradient(90deg, #FF6F00, #1976D2); /* Gradient from Orange to Blue */
+  border-radius: 5px;
+}
+
+.driver-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #555555; /* Darker text for better readability */
+  margin-bottom: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.driver-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.driver-button {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.driver-button.primary {
+  color: #ffffff;
+  background: linear-gradient(90deg, #1976D2, #FF6F00); /* Gradient from Blue to Orange */
+  box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
+}
+
+.driver-button.primary:hover {
+  background: linear-gradient(90deg, #1976D2, #FF6F00);
+  transform: scale(1.05);
+}
+
+.driver-button.secondary {
+  color: #FF6F00; /* Orange */
+  border: 2px solid #FF6F00;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.driver-button.secondary:hover {
+  background: #ffffff;
+  color: #FF6F00; /* Orange color change on hover */
+}
+
+/* Graphic Container */
+.driver-graphic-container {
+  flex: 1.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.graphic-wrapper {
+  position: relative;
+  max-width: 450px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1976D2, transparent); /* Blue gradient */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: rotate(10deg);
+}
+
+.driver-graphic {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.driver-graphic:hover {
+  transform: scale(1.1);
+}
+
+/* Abstract Layers - Colorful Shapes */
+.abstract-layer {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, #1976D2, transparent); /* Blue */
+  border-radius: 50%;
+  z-index: 0;
+  animation: move 12s linear infinite;
+  opacity: 0.6;
+}
+
+.abstract-layer.secondary {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, #FF6F00, transparent); /* Orange */
+  top: -80px;
+  right: -100px;
+  opacity: 0.4;
+}
+
+.abstract-layer.tertiary {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #FF4081, transparent);
+  top: -120px;
+  left: -120px;
+  opacity: 0.3;
+  animation: move2 15s linear infinite;
+}
+
+/* Animations for Shapes */
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-20px, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .become-driver {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+
+  .driver-content {
+    text-align: center;
+  }
+
+  .driver-buttons {
+    justify-content: center;
+  }
+
+  .driver-graphic-container {
+    margin-top: 2rem;
+  }
+}

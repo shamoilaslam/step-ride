@@ -1,0 +1,126 @@
+/* General styling for the registration page */
+.register-rider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #FF6F00, #1976D2); /* Orange to Blue gradient */
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  max-width: 900px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.register-info {
+  flex: 1;
+  padding: 3rem;
+  background: #FF6F00; /* Bright Orange */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.register-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.register-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.register-form-container {
+  flex: 1;
+  padding: 2.5rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1976D2; /* Vibrant Blue */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FF6F00; /* Orange */
+  margin-bottom: 0.5rem;
+}
+
+input, select {
+  padding: 0.8rem;
+  border: 1.5px solid #1976D2; /* Vibrant Blue */
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #0D47A1; /* Darker Blue on focus */
+}
+
+.register-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #FF6F00; /* Bright Orange */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-button:hover {
+  background: #E65100; /* Darker Orange on hover */
+}
+
+/* Style for the response message */
+.response-message {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Error message style */
+.error-message {
+  background-color: #f8d7da;
+  color: #f40a1a;
+  border: 1px solid #f5c6cb;
+}
+
+/* Success message style */
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}

@@ -1,0 +1,173 @@
+/* How It Works Section Styling */
+.how-it-works {
+  position: relative;
+  padding: 4vh 2vw;
+  background-color: #ffffff; /* Keep white for cleanliness */
+  color: #424242; /* Dark grey text for good readability */
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating Abstract Shapes */
+.how-it-works::before,
+.how-it-works::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(111, 0, 255, 0.8), transparent); /* Orange shade */
+  border-radius: 50%;
+  animation: dynamicFloatEffect 12s infinite alternate ease-in-out;
+}
+
+.how-it-works::before {
+  width: 30vw;
+  height: 30vw;
+  top: -15vw;
+  left: -15vw;
+}
+
+.how-it-works::after {
+  width: 40vw;
+  height: 40vw;
+  bottom: -20vw;
+  right: -20vw;
+}
+
+/* How It Works Content Layout */
+.how-it-works-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0 auto;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+/* Information Section Styling */
+.info-section {
+  flex: 1;
+  max-width: 48%;
+}
+
+.how-it-works-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #290265; /* Bright orange */
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.how-it-works-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  color: #424242; /* Dark grey for description */
+}
+
+/* Image Section Styling */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-image {
+  max-width: 70%; /* Ensure the image doesn't exceed the container width */
+  height: auto;    /* Maintain the aspect ratio */
+  border-radius: 1rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.app-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .app-image {
+    max-width: 80%;  /* Limit the max width on small screens */
+  }
+}
+
+/* Steps Section Styling */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #9900ff; /* Orange to blue gradient */
+  padding: 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  color: #FFEB3B; /* Golden Yellow for icons */
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff; /* White text for better contrast */
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #d5f0ff; /* Light blue for description */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .how-it-works-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .info-section, .image-section {
+    max-width: 100%;
+  }
+
+  .steps {
+    align-items: center;
+  }
+
+  .step {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .how-it-works-title {
+    font-size: 1.8rem;
+  }
+
+  .how-it-works-description {
+    font-size: 1rem;
+  }
+
+  .app-image {
+    max-width: 90%;
+  }
+}

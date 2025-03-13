@@ -1,0 +1,215 @@
+/* General Footer Styling */
+.footer {
+  background: #290265; /* Gradient from orange to blue */
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 45% 45% 0 0; /* Rounded top edges */
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  position: relative;
+  z-index: 1;
+  overflow: visible; /* Ensure no content gets cut off */
+}
+
+/* Add a curved wave effect at the bottom */
+.footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: #FF6F00; /* Use orange for wave effect */
+  border-radius: 50% 50% 0 0; /* Create a wave effect at the bottom */
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 170px;
+  padding: 1rem;
+  box-sizing: border-box;
+
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  margin-bottom: 1rem;
+
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin: 0.8rem 0;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: #FFEB3B; /* Use a golden yellow accent for hover effect */
+  transform: translateX(5px);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FFEB3B; /* Golden yellow hover for social icons */
+  transform: scale(1.2);
+}
+
+.comsats-logo {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.comsats-logo:hover {
+  transform: rotate(360deg);
+}
+
+/* Animation Container */
+.footer-animation {
+  position: relative;
+  width: 100%;
+  height: 50px; /* Space for vehicles to move */
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Vehicle Styling */
+.vehicle {
+  position: absolute;
+  bottom: 5px; /* Slightly above the footer line */
+  width: 60px; /* Reduced size to avoid overflow */
+  height: 40px; /* Adjusted size for better visibility */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: moveVehicles 15s linear infinite; /* Adjusted animation duration */
+}
+
+.car {
+  left: -60px; /* Start off-screen to the left */
+  background-image: url('../assests/caricon.png'); /* Path to the car image */
+}
+
+.motorcycle {
+  left: -110px; /* Start off-screen to the left */
+  background-image: url('../assests/bikeicon.png'); /* Path to the bike image */
+  animation-delay: 1s; /* Bike starts after the car */
+}
+
+/* Animation for vehicle movement */
+@keyframes moveVehicles {
+  from {
+    transform: translateX(0%); /* Start from left */
+  }
+  to {
+    transform: translateX(100vw); /* Move across the screen to the right */
+  }
+}
+
+/* Footer Adjustments */
+.footer {
+  position: relative;
+  overflow: visible;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-social {
+    min-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-description {
+    font-size: 1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.8rem;
+  }
+
+  .comsats-logo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-description {
+    font-size: 0.9rem;
+  }
+
+  .footer-list a {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a {
+    font-size: 1.6rem;
+  }
+
+  .comsats-logo {
+    width: 80px;
+  }
+}
