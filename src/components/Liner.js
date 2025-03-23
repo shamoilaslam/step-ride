@@ -8,6 +8,7 @@ const Liner = () => {
       <div className='liner-container'>
         <div className='text-container'>
           <h1>Get to your destination with ease</h1>
+          <p>Tech is at the heart of everything we do. Our goal? To transform the everyday lives of people around the world</p>
           <button>Book a ride</button>
         </div>
         <img

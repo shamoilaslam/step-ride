@@ -2,7 +2,7 @@
     background: linear-gradient(to right, #6820c1, #a037a6);
     color: #fff;
     /* text-align: center; */
-    padding: 60px 20px;
+    padding: 10px 10px;
     border-radius: 10px;
     margin: 0 auto;
   }
@@ -11,23 +11,28 @@
     /* max-width: 700px; */
     width: 100%;
     /* margin: 0 auto; */
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
   }
 
   .text-container{
-    width: 30%;
+    width: 40%;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;  
-    align-items: center;
+    justify-content: center; ;  
+    align-items: flex-start;
 
   }
   
+  .liner p{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
   .liner h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: bold;
     margin-bottom: 15px;
   }
@@ -39,8 +44,8 @@
   }
   
   .liner button {
-    background-color: #fff;
-    color: #b97208;
+    background-color: #ffffff;
+    color: black;
     font-size: 1rem;
     font-weight: bold;
     padding: 12px 24px;
