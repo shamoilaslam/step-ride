@@ -8,6 +8,8 @@ import HowItWorks from '../components/HowItWorks';
 import Footer from '../components/Footer';
 import RideSharingArticles from '../components/RideSharingArticles';
 import RiderTestimonials from '../components/RiderTestimonials';
+import ServicesSection from '../components/ServicesSection'; // Import corrected wrapper
+
 
 // Importing CSS file for styling
 import '../styles/Home.css';  // Create and import a new Home.css file for custom styles
@@ -17,7 +19,7 @@ export default function Home() {
     <div className="home-container">
       <Header />
       <Hero />
-      <About />
+      <ServicesSection />
       <Features />
       <BecomeDriver />
       <HowItWorks />

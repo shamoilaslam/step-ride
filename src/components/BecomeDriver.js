@@ -24,8 +24,7 @@ export default function BecomeDriver() {
           <img className="driver-graphic" src={FemaleDriver} alt="Empowering Female Drivers" />
         </div>
       </div>
-      <div className="abstract-layer"></div>
-      <div className="abstract-layer secondary"></div>
+      
     </section>
   );
 }

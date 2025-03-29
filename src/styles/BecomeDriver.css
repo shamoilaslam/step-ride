@@ -1,12 +1,14 @@
 /* Section Styling */
 .become-driver {
-  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  justify-self: center;
+  width: 96vw;
+  height: 67vh;
   padding: 5rem 3rem;
-  background-color: #ffffff; /* White background */
+  background: linear-gradient(43.28deg, #543986 17.81%, #f7944d 85.69%);
   overflow: hidden;
   border-radius: 30px;
   gap: 3rem;
@@ -16,15 +18,15 @@
 .driver-content {
   flex: 1;
   max-width: 480px;
-  color: #333333; /* Dark color for text on white background */
+  color: black; 
   position: relative;
   z-index: 2;
 }
 
 .driver-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #FF6F00; /* Bright Orange */
+  font-size: 2.4rem;
+  font-weight: bolder;
+  color: white; /* Bright Orange */
   text-transform: uppercase;
   margin-bottom: 1.5rem;
   letter-spacing: 2px;
@@ -38,17 +40,14 @@
   bottom: -10px;
   width: 60px;
   height: 5px;
-  background: linear-gradient(90deg, #FF6F00, #1976D2); /* Gradient from Orange to Blue */
+  background: linear-gradient(90deg, #FF6F00, #1976D2); 
   border-radius: 5px;
 }
 
 .driver-description {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  color: #555555; /* Darker text for better readability */
-  margin-bottom: 2.5rem;
-  font-family: 'Poppins', sans-serif;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  color: white; 
+  margin-bottom: 1.5rem;
 }
 
 .driver-buttons {
@@ -58,9 +57,8 @@
 
 .driver-button {
   display: inline-block;
-  padding: 0.9rem 2.2rem;
-  font-size: 1rem;
-  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
   border-radius: 30px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -69,12 +67,12 @@
 
 .driver-button.primary {
   color: #ffffff;
-  background: linear-gradient(90deg, #1976D2, #FF6F00); /* Gradient from Blue to Orange */
+  background: #f7944d ; 
   box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
 }
 
 .driver-button.primary:hover {
-  background: linear-gradient(90deg, #1976D2, #FF6F00);
+  background: #543986;
   transform: scale(1.05);
 }
 
@@ -87,7 +85,7 @@
 
 .driver-button.secondary:hover {
   background: #ffffff;
-  color: #FF6F00; /* Orange color change on hover */
+  color: #FF6F00; 
 }
 
 /* Graphic Container */
@@ -101,18 +99,16 @@
 
 .graphic-wrapper {
   position: relative;
-  max-width: 450px;
+  width: 80%;
+  height: 80%;
   overflow: hidden;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #1976D2, transparent); /* Blue gradient */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transform: rotate(10deg);
+
 }
 
 .driver-graphic {
   width: 100%;
-  height: auto;
-  border-radius: 50%;
+  height: 100%;
+  border-radius: 15px;
   transition: all 0.4s ease;
 }
 
@@ -120,36 +116,6 @@
   transform: scale(1.1);
 }
 
-/* Abstract Layers - Colorful Shapes */
-.abstract-layer {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background: linear-gradient(135deg, #1976D2, transparent); /* Blue */
-  border-radius: 50%;
-  z-index: 0;
-  animation: move 12s linear infinite;
-  opacity: 0.6;
-}
-
-.abstract-layer.secondary {
-  width: 500px;
-  height: 500px;
-  background: linear-gradient(135deg, #FF6F00, transparent); /* Orange */
-  top: -80px;
-  right: -100px;
-  opacity: 0.4;
-}
-
-.abstract-layer.tertiary {
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(135deg, #FF4081, transparent);
-  top: -120px;
-  left: -120px;
-  opacity: 0.3;
-  animation: move2 15s linear infinite;
-}
 
 /* Animations for Shapes */
 @keyframes move {

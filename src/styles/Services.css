@@ -1,0 +1,145 @@
+
+/* Services Section */
+.services-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Services Container */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Wrapper for each service card */
+.service-wrapper {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+/* Gradient background behind 1st and 3rd card */
+.with-gradient {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Gradient for 1st card */
+.gradient-0::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(43.28deg, #543986 17.81%, #f7944d 85.69%);
+  z-index: 1;
+  border-radius: 10px;
+  transform: skewY(-3deg);
+}
+
+/* Reverse Gradient for 3rd card */
+.gradient-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-43.28deg, #f7944d 17.81%, #543986 85.69%);
+  z-index: 1;
+  border-radius: 10px;
+  transform: skewY(3deg);
+}
+
+/* Service Card */
+.service-card {
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 8px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+/* Reverse Layout for Gradient Cards (1st & 3rd) */
+.gradient-0 .service-card,
+.gradient-2 .service-card {
+  flex-direction: row-reverse;
+}
+
+/* Service Image */
+.service-image {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+/* Service Content */
+.service-content {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+/* Change text color to white if inside a gradient */
+.with-gradient .service-title,
+.with-gradient .service-description {
+  color: white !important;
+}
+
+/* Service Title */
+.service-title {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  color: #000;
+}
+
+/* Service Description */
+.service-description {
+  font-size: 1rem;
+  color: black;
+}
+
+/* Service Button */
+.service-button {
+  padding: 10px;
+  border: none;
+  width: 140px;
+  border-radius: 5px;
+  background-color: #f7944d;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Section Heading */
+.service-liner h1 {
+  font-weight: bolder;
+  font-size: 2.7rem;
+  color:#543986 ;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Hover effect for button */
+.service-button:hover {
+  background-color: #543986;
+  color: white;
+}
